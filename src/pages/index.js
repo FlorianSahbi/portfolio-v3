@@ -11,12 +11,11 @@ const IndexPage = () => {
   return (
     <>
       <SEO title="Home" description="hi i am Florian Sahbi" lang="EN" />
-      {/* <Header /> */}
+      <Header />
       {/* <CurrentJob date={currentJob} /> */}
       <Projects />
-      <Skills />
+      {/* <Skills /> */}
       <Hobbies />
-      {/* <Article /> */}
     </>
   )
 }
