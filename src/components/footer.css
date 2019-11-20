@@ -1,0 +1,56 @@
+/*///////////////////////////////////////////////////// FOOTER //////////////////////*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    border-top: 8px #770000 double;
+    background-color: #252A30;
+}
+
+footer .footerContent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p {
+    z-index: 10;
+    font-size: 0.8em;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+}
+
+.socialMedia {
+    z-index: 9;
+}
+
+.social {
+    margin: 10px;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.roro {
+    animation: rotation 100s infinite linear;
+    transform-origin: center;
+    position: absolute;
+}
+
+.fa-spin {
+    animation: 100s !important;
+}

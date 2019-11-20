@@ -1,0 +1,102 @@
+/*///////////////////////////////////////////////////// SECTION COMPETENCES //////////////////////*/
+
+section#competences {
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272830;
+    border-top: 8px double #770000;
+    border-bottom: 8px double #770000;
+}
+
+section#competences .skillsWrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillsNav, .skillDescription {
+    height: 100%;
+    width: 50%;
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillsNav {
+    flex-wrap: wrap;
+}
+
+
+.skillButton {
+    height: 10%;
+    width: 40%;
+    border: 5px #770000 double;
+    border-radius: 29.3px;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: capitalize;
+    box-shadow: 0px 0px 18px rgba(0,0,0,0.6);
+    transition: all 0.2s ease-in;
+    text-align: center;
+}
+
+.skillButton:hover {
+    box-shadow: 0px 0px 5px darkslategrey;
+}
+
+.activeButton {
+    box-shadow: 0px 0px 5px darkslategrey;
+    color: beige;
+    background: rgba(0,0,0,0.6);
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    color: white;
+}
+
+.skillPreview {
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.skillTexte {
+    /* border: 2px solid blue; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 3em;
+    line-height: 1.5em;
+}
+
+.skill img {
+    width: 300px;
+    /* height: 300px; */
+    object-position: center;
+    object-fit: contain;
+}
+    
