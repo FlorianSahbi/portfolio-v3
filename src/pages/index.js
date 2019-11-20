@@ -10,7 +10,7 @@ import Article from '../components/article'
 const IndexPage = () => {
   return (
     <>
-      {/* <SEO title="Home" /> */}
+      <SEO title="Home" description="hi i am Florian Sahbi" lang="EN" />
       {/* <Header /> */}
       {/* <CurrentJob date={currentJob} /> */}
       <Projects />
