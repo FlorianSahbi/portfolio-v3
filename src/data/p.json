@@ -19,7 +19,7 @@
         "name": "oddmushroomshop.com",
         "formattedName": "Odd Mushroom Shop",
         "description": "Site d'e-commerce basé sur WordPress et utilisant le plugin WooCommerce. Créé pour une créatrice de pins s'inspirant de la culture geek, je me suis chargé de lui donner les outils lui permettant de vendre ses premières créations. Mes missions ont été la configuration de WordPress et du plugin WooCommerce, la modification et l'ajout de code pour que l'UI du site corresponde à ses attentes, la mise en place d'un système de paiement securisé, le calcul automatique des frais de livraison, la mise en place du certificat SSL, la customisation des templates d'emails, la gestion des stocks, le référencement et aussi m'assurer que le site soit RGPD compliant.",
-        "url": "https://www.oddmushroomshop.com",
+        "url": "odd",
         "buttonLabel": "Site de oddmushroomshop",
         "type": "Personnel",
         "duree": "6 mois",

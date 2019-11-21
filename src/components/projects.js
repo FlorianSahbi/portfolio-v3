@@ -14,6 +14,11 @@ import appartooPreview3 from "../images/previews/previewAppartoo3.png"
 import appartooPreview4 from "../images/previews/previewAppartoo4.png"
 import p from "../data/p.json"
 
+const obj = {
+    odd: appartooPreview1,
+
+}
+
 export const Projects = () => {
     const [projects, setProjects] = useState(p)
     const [id, setId] = useState(2)
@@ -35,7 +40,7 @@ export const Projects = () => {
                 id={_id}
                 formattedName={formattedName}
                 description={description}
-                // url={url}
+                url={obj[url]}
                 url="https://pm1.narvii.com/6028/1cd74bdfd4df659edfdb17712e560c672cc37c5f_hq.jpg"
                 buttonLabel={buttonLabel}
                 type={type}
