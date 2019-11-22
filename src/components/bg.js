@@ -6,17 +6,30 @@ const Bg = (props) => {
 
     return (
         <div className={display ? "layers" : "layers pointer"}>
+
+
+
             <div className={display ? "backgroundLayer showBg" : "backgroundLayer hideBg pointer"}></div>
 
 
             <div className={display ? "layer showTopLeftPanel" : "layer hideTopLeftPanel"}>
                 <h1 className="title">{formattedName}</h1>
-                {/* <h2>{type}</h2> */}
-                <div className="close" style={{ cursor: "pointer" }} onClick={onClose}>X</div>
+                <span className="separator"></span>
+
+                <div className="button">
+                    <a href={url} target="_blank" rel="noopener noreferrer">
+                        {buttonLabel}
+                    </a>
+                </div>
+
+
             </div>
 
             <div className={display ? "layer showTopRightPanel" : "layer hideTopRightPanel"}>
-                <img alt={alt} src={url} />
+                <img alt={alt} src={preview} />
+                <div className="close" onClick={onClose}>X</div>
+
+
             </div>
 
             <div className={display ? "layer showBotRightPanel" : "layer hideBotRightPanel"}>
@@ -24,10 +37,11 @@ const Bg = (props) => {
             </div>
 
             <div className={display ? "layer showBotLeftPanel" : "layer hideBotLeftPanel"}>
+                {/* {previews.map(p => <div className="lesImg"><img alt={alt} src={p} /></div>)} */}
+
+                {/* <div className="lesImg"><img alt={alt} src={url} /></div>
                 <div className="lesImg"><img alt={alt} src={url} /></div>
-                <div className="lesImg"><img alt={alt} src={url} /></div>
-                <div className="lesImg"><img alt={alt} src={url} /></div>
-                <div className="lesImg"><img alt={alt} src={url} /></div>
+                <div className="lesImg"><img alt={alt} src={url} /></div> */}
             </div>
         </div>
     )

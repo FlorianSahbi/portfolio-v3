@@ -3,8 +3,9 @@ section#projets {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    /* height: 100vh; */
-    padding: 50px;
+    min-height: 100vh;
+    height: 100%;
+    padding: 1rem;
     background-image: url('../images/backgrounds/textures/straws.png'), linear-gradient(#ffffff, #d1d1d1);
 }
 
@@ -16,7 +17,7 @@ section#projets .projectsWrapper {
     justify-content: center;
     z-index: 2;
     position: relative;
-    padding: 50px;
+    padding: 1rem;
     border: 10px #770000 double;
     border-radius: 10px;
     background-color: #272830;
@@ -48,12 +49,12 @@ section#projets .projectsWrapper {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .projectNav ul li {
     height: 100px;
-    width: 100%;
+    width: 45%;
     margin: 1em;
     position: relative;
     display: flex;
@@ -79,6 +80,18 @@ section#projets .projectsWrapper {
 
 .projectNav ul li h2 {
     position: absolute;
+    color: white;
+    font-size: 3rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    font-weight: bold;
 }
 
 .hide {

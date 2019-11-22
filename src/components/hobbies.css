@@ -1,5 +1,7 @@
 /*///////////////////////////////////////////////////// SECTION HOBBIES //////////////////////*/
 
+@import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script&display=swap');
+
 section#hobbies {
     height: 100vh;
     width: 100%;
@@ -25,14 +27,16 @@ section#hobbies .hobbiesContent h2 {
     font-size: 2em;
     margin: 20px 0;
     color: #770000;
-    font-family: petit formal script;
+    font-family: 'Petit Formal Script', cursive;
     font-weight: bold;
 }
 
 section#hobbies .hobbiesContent h3 {
-    font-size: 1.3em;
-    font-family: Petit Formal Script;
+    font-size: 1.5rem;
     font-weight: bold;
+    font-family: 'Petit Formal Script', cursive;
+    font-weight: bold;
+    color: #fff;
 }
 
 section#hobbies .ligneHauteHobbies {

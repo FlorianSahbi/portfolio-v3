@@ -73,13 +73,32 @@ img {
     object-position: center;
 }
 
+.close {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    color: #f5f5dd;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    height: 3rem;
+    border: 2px solid #760100;
+    width: 3rem;
+    margin: 1rem;
+    border-radius: 70px;
+    background: #000000a1;
+    cursor: "pointer";
+}
+
 .backgroundLayer {
     position: absolute;
     height: 100vh;
     width: 400vw;
     animation: gradient 10s infinite;
     transition: opacity 0.5s ease;
-    background: linear-gradient(90deg, rgba(119,0,0,1) 0%, rgba(255,0,0,1) 50%, rgba(119,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(119, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(119, 0, 0, 1) 100%);
 }
 
 .showBg {
@@ -141,7 +160,6 @@ img {
 
 .showBotLeftPanel {
     transform: translate3d(0vw, 51vh, 0);
-
     display: flex;
     justify-content: center;
     padding: 0;
@@ -150,6 +168,30 @@ img {
 
 .hideBotLeftPanel {
     transform: translate3d(-100vw, 100vh, 0);
+}
+
+.separator {
+    width: 50%;
+    border-bottom: 2px solid beige;
+    margin: 1rem 0rem;
+}
+
+.button {
+    width: 200px;
+    height: 3rem;
+    border: rgba(119, 0, 0, 1) double 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button a {
+    color: beige;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 @keyframes one {
@@ -248,7 +290,7 @@ img {
     font-size: 4rem;
     color: beige;
     text-align: center;
-} 
+}
 
 .lesImg {
     width: 50%;

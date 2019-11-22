@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './hobbies.css'
 
+const Hobby = (props) => {
+    
+}
+
 class Projects extends Component {
     render() {
         return (

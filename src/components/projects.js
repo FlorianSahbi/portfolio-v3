@@ -1,22 +1,33 @@
 import React, { useState } from 'react';
 import './projects.css'
 import Background from '../components/bg'
-import appartooPreview from "../images/previews/previewAppartoo1.png"
-import cirisiPreview from "../images/previews/previewCirisi.png"
-import floriansahbiPreview from "../images/previews/previewFloriansahbi.png"
-import lagalopeePreview from "../images/previews/previewLagalopee.png"
-import lareinettePreview from "../images/previews/previewLareinette.png"
-import oddmushroomshopPreview from "../images/previews/previewOddMushroom.png"
-import swdvPreview from "../images/previews/previewSWDV.png"
-import appartooPreview1 from "../images/previews/previewAppartoo1.png"
-import appartooPreview2 from "../images/previews/previewAppartoo2.png"
-import appartooPreview3 from "../images/previews/previewAppartoo3.png"
-import appartooPreview4 from "../images/previews/previewAppartoo4.png"
+import appartooPreview from "../images/previews/appartoo/appartoo.png"
+import cirisiPreview from "../images/previews/cirisi/cirisi.png"
+import floriansahbiPreview from "../images/previews/floriansahbi/floriansahbi.png"
+import lagalopeePreview from "../images/previews/lagalopee/lagalopee.png"
+import lareinettePreview from "../images/previews/lareinette/lareinette.png"
+import oddmushroomshopPreview from "../images/previews/oddmushroom/oddMushroom.png"
+import swdvPreview from "../images/previews/swdv/swdv.png"
+import siogamePreview from "../images/previews/siogame/siogame.png"
+import nendoroidsPreview from "../images/previews/nendoroids/nendoroids.png"
+
+import appartooPreview1 from "../images/previews/appartoo/appartoo.png"
+import appartooPreview2 from "../images/previews/appartoo/appartoo2.png"
+import appartooPreview3 from "../images/previews/appartoo/appartoo3.png"
+import appartooPreview4 from "../images/previews/appartoo/appartoo4.png"
+
 import p from "../data/p.json"
 
 const obj = {
-    odd: appartooPreview1,
-
+    appartoo: appartooPreview1,
+    cirisi: cirisiPreview,
+    floriansahbi: floriansahbiPreview,
+    lagalopee: lagalopeePreview,
+    lareinette: lareinettePreview,
+    nendoroids: nendoroidsPreview,
+    oddmushroom: oddmushroomshopPreview,
+    siogame: siogamePreview,
+    swdv: swdvPreview,
 }
 
 export const Projects = () => {
@@ -24,8 +35,9 @@ export const Projects = () => {
     const [id, setId] = useState(2)
     const [navIsDisplayed, setNavIsDisplayed] = useState(true)
     const previews = [appartooPreview, cirisiPreview, floriansahbiPreview, lagalopeePreview, lareinettePreview, oddmushroomshopPreview, swdvPreview]
-    const screenshots = [appartooPreview1, appartooPreview2, appartooPreview3, appartooPreview4, appartooPreview4]
     const [display, setDisplay] = useState(false)
+    
+    const screenshots = [appartooPreview1, appartooPreview2, appartooPreview3, appartooPreview4]
 
     const handleProjectSelected = (id) => {
         setId(id);
@@ -40,14 +52,13 @@ export const Projects = () => {
                 id={_id}
                 formattedName={formattedName}
                 description={description}
-                url={obj[url]}
-                url="https://pm1.narvii.com/6028/1cd74bdfd4df659edfdb17712e560c672cc37c5f_hq.jpg"
+                url={url}
                 buttonLabel={buttonLabel}
                 type={type}
                 duree={duree}
                 dateDebut={dateDebut}
                 dateFin={dateFin}
-                preview={preview}
+                preview={obj[preview]}
                 alt={alt}
                 display={display}
                 onClose={closeModal}
@@ -81,7 +92,7 @@ export const Projects = () => {
                                 <ProjectCard
                                     key={project._id}
                                     id={project._id}
-                                    preview={previews[i]}
+                                    preview={obj[project.preview]}
                                     alt={project.alt}
                                     formattedName={project.formattedName}
                                 />
