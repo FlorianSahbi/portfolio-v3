@@ -175,6 +175,7 @@ section#hobbies .hobbyJv {
 @media screen and (max-width: 650px) {
     section#hobbies .hobbiesContent h2 {
         font-size: 2rem;
+        text-align: center;
     }
 
     section#hobbies {

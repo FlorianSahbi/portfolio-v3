@@ -156,6 +156,8 @@ img {
 
 .layer:nth-child(4) {
     /* animation: four 5s infinite; */
+    overflow: auto;
+    justify-content: flex-start;
 }
 
 .showBotLeftPanel {

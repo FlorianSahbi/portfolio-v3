@@ -81,7 +81,7 @@ section#projets .projectsWrapper {
 .projectNav ul li h2 {
     position: absolute;
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     height: 100%;
     width: 100%;
     display: flex;
@@ -90,8 +90,10 @@ section#projets .projectsWrapper {
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 1px;
+    /* -webkit-text-stroke-width: 1px; */
     font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 3px grey;
 }
 
 .hide {
@@ -111,7 +113,6 @@ section#projets .projectsWrapper {
     .projectNav ul li {
         width: 100%;
     }
-    
     .projectNav ul li h2 {
         font-size: 2rem;
         -webkit-text-stroke-width: 0px;
