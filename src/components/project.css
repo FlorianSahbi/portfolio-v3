@@ -71,7 +71,7 @@
     align-items: center;
     cursor: pointer;
     text-transform: capitalize;
-    box-shadow: 0px 0px 18px rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.6);
     transition: all 0.2s ease-in;
     text-align: center;
     text-decoration: none;

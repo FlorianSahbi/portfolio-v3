@@ -1,7 +1,6 @@
 /*///////////////////////////////////////////////////// SECTION HOBBIES //////////////////////*/
 
 @import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script&display=swap');
-
 section#hobbies {
     height: 100vh;
     width: 100%;
@@ -62,7 +61,7 @@ section#hobbies .colonneLigneHauteHobbies {
     flex: 15%;
     justify-content: space-around;
     align-items: center;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 section#hobbies .colonneDoubleLarge {
@@ -73,8 +72,7 @@ section#hobbies .colonneDoubleLarge {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow: hidden; 
-
+    overflow: hidden;
 }
 
 section#hobbies .colonneLigneHauteHobbiesDouble {
@@ -83,19 +81,17 @@ section#hobbies .colonneLigneHauteHobbiesDouble {
     flex: 25%;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column; 
-    overflow: hidden; 
-
+    flex-direction: column;
+    overflow: hidden;
 }
 
 section#hobbies .colonneLigneBasseHobbies {
-    height: 100%; 
+    height: 100%;
     display: flex;
     flex: 33%;
     justify-content: space-around;
     align-items: center;
-    overflow: hidden; 
-
+    overflow: hidden;
 }
 
 section#hobbies .hobby {
@@ -119,59 +115,95 @@ section#hobbies .hobby h2 {
 }
 
 section#hobbies .hobbyDigital {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("../images/hobbies/hobbyDigital.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hobbies/hobbyDigital.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 section#hobbies .hobbyJapon {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("../images/hobbies/hobbyJapon.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hobbies/hobbyJapon.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 section#hobbies .hobbyPlongee {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("../images/hobbies/hobbyPlongee.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hobbies/hobbyPlongee.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 section#hobbies .hobbyPhoto {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("../images/hobbies/hobbyPhoto.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hobbies/hobbyPhoto.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 section#hobbies .hobbyDessin {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("../images/hobbies/hobbyDessin.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hobbies/hobbyDessin.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 section#hobbies .hobbyNewtech {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("../images/hobbies/hobbyNewtech.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hobbies/hobbyNewtech.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 section#hobbies .hobbyVoyage {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("../images/hobbies/hobbyVoyage.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hobbies/hobbyVoyage.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 section#hobbies .hobbyJv {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("../images/hobbies/hobbyJv.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hobbies/hobbyJv.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 /*///////////////////////////////////////////////////// SECTION HOBBIES FN //////////////////////*/
+
+@media screen and (max-width: 650px) {
+    section#hobbies .hobbiesContent h2 {
+        font-size: 2rem;
+    }
+
+    section#hobbies {
+        padding: 1rem;
+        height: auto;
+    }
+    section#hobbies .ligneHauteHobbies {
+        flex-direction: column;
+    }
+    section#hobbies .colonneLigneHauteHobbies {
+        width: 100%;
+        height: 150px;
+    }
+
+    section#hobbies .ligneBasseHobbies {
+        flex-direction: column;
+    }
+
+    section#hobbies .colonneLigneHauteHobbiesDouble {
+        width: 100%;
+    }
+
+    section#hobbies .colonneLigneBasseHobbies {
+        width: 100%;
+        height: 150px;
+    }
+
+    section#hobbies .colonneDoubleLarge {
+        height: 150px;
+        width: 100%;
+    }
+}

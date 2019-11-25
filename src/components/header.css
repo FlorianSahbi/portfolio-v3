@@ -86,3 +86,9 @@ header#home h2 {
 }
 
 /*///////////////////////////////////////////////////// HEADER FIN //////////////////////*/
+
+@media screen and (max-width: 650px) {
+  header#home .blankElem {
+    display: none;
+  }
+}
