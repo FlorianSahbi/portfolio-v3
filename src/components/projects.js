@@ -10,6 +10,7 @@ import oddmushroomshopPreview from "../images/previews/oddmushroom/oddMushroom.p
 import swdvPreview from "../images/previews/swdv/swdv.png"
 import siogamePreview from "../images/previews/siogame/siogame.png"
 import nendoroidsPreview from "../images/previews/nendoroids/nendoroids.png"
+import japanPreview from "../images/previews/japan/japan.png"
 
 import appartooPreview1 from "../images/previews/appartoo/appartoo.png"
 import appartooPreview2 from "../images/previews/appartoo/appartoo2.png"
@@ -28,13 +29,14 @@ const obj = {
     oddmushroom: oddmushroomshopPreview,
     siogame: siogamePreview,
     swdv: swdvPreview,
+    japan: japanPreview
 }
 
 export const Projects = () => {
     const [projects, setProjects] = useState(p)
     const [id, setId] = useState(2)
     const [navIsDisplayed, setNavIsDisplayed] = useState(true)
-    const previews = [appartooPreview, cirisiPreview, floriansahbiPreview, lagalopeePreview, lareinettePreview, oddmushroomshopPreview, swdvPreview]
+    const previews = [appartooPreview, cirisiPreview, floriansahbiPreview, lagalopeePreview, lareinettePreview, oddmushroomshopPreview, swdvPreview, japanPreview]
     const [display, setDisplay] = useState(false)
     
     const screenshots = [appartooPreview1, appartooPreview2, appartooPreview3, appartooPreview4]
