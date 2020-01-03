@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Petit+Formal+Script&display=swap");
+
+.hobbiesContainer {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/backgrounds/textures/type.png");
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  padding: 5em;
+}
+
+.gridContainer {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas:
+    "digit digit japan japan japan photo photo art art"
+    "digit digit dive dive dive photo photo art art"
+    "tech tech tech travel travel travel game game game";
+}
+
+.hobby {
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  border: 5px solid #770000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hobby h2 {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #770000;
+  font-family: "Petit Formal Script", cursive;
+  font-weight: bold;
+}
+
+.hobby h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Petit Formal Script", cursive;
+  font-weight: bold;
+  color: #fff;
+}
+
+.digit {
+  grid-area: digit;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/hobbies/hobbyDigital.png");
+}
+
+.japan {
+  grid-area: japan;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/hobbies/hobbyJapon.jpg");
+}
+
+.dive {
+  grid-area: dive;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/hobbies/hobbyPlongee.jpg");
+}
+
+.photo {
+  grid-area: photo;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/hobbies/hobbyPhoto.jpg");
+}
+
+.art {
+  grid-area: art;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/hobbies/hobbyDessin.jpg");
+}
+
+.tech {
+  grid-area: tech;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/hobbies/hobbyNewtech.jpg");
+}
+
+.travel {
+  grid-area: travel;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/hobbies/hobbyVoyage.jpg");
+}
+
+.game {
+  grid-area: game;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/hobbies/hobbyJv.jpg");
+}

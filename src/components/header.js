@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
-import './header.css'
+import classes from './header.module.css';
+import "./reset.css";
 
-class Projects extends Component {
+class Header extends Component {
   render() {
     return (
 
-      <header id="home" className="home">
-        <div className="homeContent">
-          <div className="idSite">
+      <header className={classes.homeContainer}>
+        <div className={classes.wrapper}>
+          <div className={classes.gridContainer}>
             <h1>Sahbi<br />Florian</h1>
             <h2>Développeur web</h2>
-          </div>
-          <div className="blankElem">
           </div>
         </div>
       </header>
@@ -19,4 +18,4 @@ class Projects extends Component {
   }
 }
 
-export default Projects;
+export default Header;
