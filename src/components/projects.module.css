@@ -38,6 +38,7 @@
   align-items: center;
   border-radius: 10px;
   cursor: pointer;
+  position: relative;
 }
 
 .projectCardWrapper {
@@ -50,9 +51,30 @@
     color: white;
     font-size: 1.5em;
     text-align: center;
+    margin-bottom: 5px;
+} 
+
+.projectCardTitle h3 {
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  border-top: 2px solid grey;
+  padding-top: 5px;
 } 
 
 .projectCardTitle a {
     color: white;
     text-decoration: none;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    font-size: 0.8em;
+}
+
+.state {
+  position: absolute;
+  font-size: 0.8em;
+  bottom: 1em;
+  left: 1em;
+  color: white;
 }

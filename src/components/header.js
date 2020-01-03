@@ -9,8 +9,11 @@ class Header extends Component {
       <header className={classes.homeContainer}>
         <div className={classes.wrapper}>
           <div className={classes.gridContainer}>
-            <h1>Sahbi<br />Florian</h1>
-            <h2>Développeur web</h2>
+            <div className={classes.id}>
+              <h1>Sahbi<br />Florian</h1>
+              <h2>Développeur web</h2>
+            </div>
+            <div className={classes.blank}></div>
           </div>
         </div>
       </header>

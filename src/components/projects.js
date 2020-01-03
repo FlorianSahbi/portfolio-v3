@@ -8,9 +8,11 @@ const Card = (props) => {
     <div className={classes.projectCardContainer}>
       <div className={classes.projectCardTitle}>
         <h2>{props.name}</h2>
+        <h3>{props.type}</h3>
         {props.url &&
           <a href={props.url} target="_blank">See</a>
         }
+        <p className={classes.state}>State : {props.dateFin}</p>
       </div>
     </div>
   )
@@ -24,7 +26,7 @@ export const Projects = () => {
           {projects.map(project => {
             return (
               <div className={classes.contcont}>
-                <Card name={project.formattedName} url={project.url} />
+                <Card name={project.formattedName} url={project.url} dateFin={project.dateFin} type={project.type} />
               </div>
             )
           })}
