@@ -1,7 +1,7 @@
 .projectsContainer {
   min-height: 100vh;
   width: 100vw;
-  background: #26272F;
+  background: #26272f;
   border-top: 7px double #770000;
   border-bottom: 7px double #770000;
 }
@@ -48,11 +48,11 @@
 }
 
 .projectCardTitle h2 {
-    color: white;
-    font-size: 1.5em;
-    text-align: center;
-    margin-bottom: 5px;
-} 
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 5px;
+}
 
 .projectCardTitle h3 {
   color: white;
@@ -60,15 +60,15 @@
   text-align: center;
   border-top: 2px solid grey;
   padding-top: 5px;
-} 
+}
 
 .projectCardTitle a {
-    color: white;
-    text-decoration: none;
-    position: absolute;
-    bottom: 1em;
-    right: 1em;
-    font-size: 0.8em;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  font-size: 0.8em;
 }
 
 .state {
@@ -77,4 +77,16 @@
   bottom: 1em;
   left: 1em;
   color: white;
+}
+
+@media (max-width: 650px) {
+  .gridList {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+  }
+
+  .wrapper {
+    padding: 0.5em;
+  }
 }

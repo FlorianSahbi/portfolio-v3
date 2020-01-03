@@ -50,3 +50,14 @@
   grid-area: blank;
   border: 2px solid pink;
 }
+
+@media (max-width: 650px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    grid-template-areas: "id";
+  }
+
+  .wrapper {
+    padding: 0.5em;
+  }
+}
